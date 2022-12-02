@@ -1,0 +1,33 @@
+1
+Results for the extraLargeArray
+insert 575.0643 ms
+append 2.6462 ms
+ 
+2
+Results for the tinyArray   
+insert 20.4 μs
+append 56.6 μs
+
+Results for the smallArray
+insert 28.9 μs
+append 63.7 μs
+
+Results for the mediumArray
+insert 139.1 μs
+append 101.2 μs
+
+Results for the largeArray
+insert 5.3564 ms
+append 381.2 μs
+
+Results for the extraLargeArray
+insert 555.4094 ms
+append 4.2455 ms
+
+insert = .unshift 
+append = .push
+
+
+for the tiny and small arrays the inset is faster, for all the bigger arrays the append does so much better 
+it takes about 555 milliseconds for the insert when taking in the extraLargeArray and only 4 milliseconds for the append
+but the insert takes about 20 microseconds when taking in the tinyArray and the append about 56 microseconds
