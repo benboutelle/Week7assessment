@@ -35,12 +35,29 @@ console.log(uniqueChar2('hi'))
 // space O(n)
 
 //3
-const  pangramSentence = () => {}
-// run
+let string = ("The quick brown fox jumps over the lazy dog")
+const  pangramSentence = (string) => {
+  let strArr = string()
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
+
+  for (let i = 0; i<alphabet.length; i++){
+    if(strArr.indexOf(alphabet[i])<0){
+      return false
+    }
+
+  }
+    return true
+ }
+ //true
+// run O(n)
 //space
 
 //4
-const  longWord = () => {}
+const  findLongestWord = (str) => {
+  return str.length
+}
+findLongestWord('hi hello')
 
-//run
-//space
+// 5
+//run O(1)
+//space O(1)
